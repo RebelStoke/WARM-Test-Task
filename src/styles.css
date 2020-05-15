@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+.main{
+  background-color: #171717;
+}
+html{
+  height: 100%;
+}

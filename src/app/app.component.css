@@ -1,0 +1,72 @@
+.success{
+  background: #5030d9;
+  color: white;
+}
+
+.main{
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.songList{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #383838;
+  padding: 100px;
+  font-family: "Roboto Light";
+  font-size: 20px;
+}
+.list-group{
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  max-height: 300px;
+  margin-bottom: 10px;
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+  border: #171717 1px solid;
+}
+
+.singleSong{
+}
+
+.song{
+  background: transparent;
+  color: white;
+}
+
+.cartButton{
+  align-self: flex-end;
+  background: #241657;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.songListText{
+  font-family: Candara;
+  font-weight: bold;
+  font-size: 30px;
+  color: #5030d9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #241657;
+}

@@ -1,0 +1,134 @@
+.success{
+  background: #5030d9;
+  color: white;
+}
+
+.main{
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.songList{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background: #383838;
+  padding: 100px;
+  font-family: "Roboto Light";
+  font-size: 20px;
+}
+.list-group{
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  max-height: 300px;
+  margin-bottom: 10px;
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+  border: #171717 1px solid;
+}
+.btnBox{
+  width: 50%;
+  height: 99%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px;
+}
+.infoBox{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5vh;
+}
+.btn{
+  border-radius: 0;
+  height: 100%;
+  width: 5vh;
+  background-color: #241657;
+  border: none;
+  font-size: 40px;
+  border-top: 0px;
+  padding-top: -1px;
+}
+.btn:hover{
+  background-color: #5030d9;
+}
+.btnRed{
+  border-radius: 0;
+  width: 5vh;
+  border: none;
+  font-size: 40px;
+  background: #340902;
+}
+
+.btnRed:hover{
+  background: #841f02;
+}
+
+.list-group-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #171717;
+  color: white;
+  font-family: Arial;
+  border: none;
+  height: 5vh;
+  padding: 0;
+  border: white 1px solid;
+}
+
+.flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleSong{
+}
+
+.song{
+  background: transparent;
+  color: white;
+}
+
+.cartButton{
+  align-self: flex-end;
+  background: #241657;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+.cartButton:hover{
+  background: #5030d9;
+}
+
+.songListText{
+  font-family: Candara;
+  font-weight: bold;
+  font-size: 30px;
+  color: #241657;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  border-left: 1px solid #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #241657;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5030d9;
+}

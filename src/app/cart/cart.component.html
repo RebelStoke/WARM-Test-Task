@@ -1,0 +1,21 @@
+<div class="main" >
+  <div class="songList">
+    <a class="songListText">CART</a>
+    <div class="list-group">
+      <div class="list-group-item" *ngFor="let song of Songs | async" >
+        <div class="infoBox">
+          <div class="flexCenter">{{ song.id }}</div>
+          <div class="flexCenter">{{ song.name }}</div>
+        </div>
+        <div class="btnBox">
+          <button type="button" class="btn btn-primary" (click)="increaseCount(song)">+</button>
+          <div class="flexCenter" style="width: 5vh; font-size: 40px">{{ song.count }}</div>
+          <button type="button" class="btn btn-primary" (click)="decreaseCount(song)">-</button>
+          <button type="button" class="btnRed btn-primary" (click)="removeFromCart(song)">x</button>
+        </div>
+    </div>
+  </div>
+    <button type="button" (click)="goToSongs()" class="cartButton" >BACK</button>
+  </div>
+</div>
+

@@ -1,0 +1,131 @@
+.success{
+  background: #5030d9;
+  color: white;
+}
+
+.main{
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.songList{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #383838;
+  padding: 100px;
+  font-family: "Roboto Light";
+  font-size: 20px;
+}
+.list-group{
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  max-height: 400px;
+  margin-bottom: 10px;
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+  border: #171717 1px solid;
+}
+.btn{
+  border-radius: 0;
+  height: 100%;
+  width: 5vh;
+  background-color: #241657;
+  border: none;
+  font-size: 20px;
+}
+.btn:hover{
+  background-color: #5030d9;
+}
+.list-group-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #171717;
+  color: white;
+  font-family: Arial;
+  border: white 1px solid;
+  padding: 0;
+  height: 5vh;
+}
+
+.flexCenter{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5vh;
+}
+.flex{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song{
+  background: transparent;
+  color: white;
+}
+
+.cartButton{
+  align-self: flex-end;
+  background: #241657;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+.sortBar{
+  display: flex;
+  flex-direction: row;
+  height: 2vh;
+
+}
+.sortButton{
+  justify-content: space-around;
+  padding: 0;
+  border: #171717 1px solid;
+  background: #241657;
+  color: white;
+}
+.sortButton:hover{
+  background: #5030d9;
+}
+.cartButton:hover{
+  background: #5030d9;
+}
+
+.songListText{
+  font-family: Candara;
+  font-weight: bold;
+  font-size: 30px;
+  color: #241657;
+  margin-top: -100px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #241657;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5030d9;
+}
+
+#filterField{
+  background: #241657;
+  color: white;
+  border: none;
+}

@@ -1,0 +1,29 @@
+<div class="main">
+  <div class="songList">
+    <div class="flex">
+      <a class="songListText">SONG LIST</a>
+      <input type="text" id="filterField"  (input)="filterSongs($event)" placeholder="Search...">
+    </div>
+    <div class="list-group">
+      <div class="sortBar">
+        <div type="button" (click)="sortBy('id');"  class="sortButton flexCenter">ID</div>
+        <div type="button" (click)="sortBy('name');" class="sortButton flexCenter">Aa</div>
+      </div>
+      <div class="list-group-item" *ngFor="let song of songs | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" >
+        <div class="flexCenter">
+          <div>{{ song.id }}</div>
+          <div>{{ song.name }}</div>
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="clickButton(song)">BUY</button>
+      </div>
+    </div>
+    <ngb-pagination style="align-self: center;"
+      [(page)]="page"
+      [pageSize]="5"
+      [collectionSize]="collectionSize">
+    </ngb-pagination>
+    <button type="button" (click)="goToCart()" class="cartButton" >GO TO CART</button>
+  </div>
+
+</div>
